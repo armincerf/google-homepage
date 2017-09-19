@@ -3,57 +3,125 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-.header ul {
-	list-style-type: none;
-	margin: 0;
-	padding-top: 10;
+#header {
+	text-align: right;
+	margin-right: 33px;
+	margin-top: 15px;
+	min-width: 866px;
+	height: 30px
 }
-li {
-    display: inline;
-    float: right;
-    margin-right: 8px;
+#header a {
+	margin-right: 15px;
+	vertical-align: middle;
+	display: inline-block;
 }
-.logo{
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 100px; 
-}
-.logo img{
 
-	width: 500px;
-}
-.search-box{
-	position: relative;
-	text-align: center;
-
-}
-.search-box input{
-	width: 500px;
+#nav {
+	float:right;
 	height: 30px;
+	width: 900px;
+	clear: both;
 }
-.search-box input:focus {
+#options {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#options a {
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	background: url('images/sprites.png');
+	background-position: -132px -38px;
+	opacity: .55; 
+}
+#options a:hover{
+	opacity: 1;
+}
+#header button {
 	outline: none;
-	box-shadow: 2px 2px 5px grey;
+	height: 30px;
+	background: linear-gradient(#4387fc, #4683eb);
+	color: white;
+	border: none;
+	padding-right: 13px;
+	padding-left: 13px;
+	font-weight: bold;
+	border-radius: 3px;
 }
-.buttons{
-	text-align: center;
-	margin-top: 30px;
+#logo {
+	display: block;
+	margin: auto;
+	padding-top: 112px;
 }
-.link-text{
+#search {
+	padding-top: 40px;
+	width: 900px;
+	display: block;
+	margin: 0 auto;
+}
+#search #search-box{
+
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 575px;
+	padding: 12px 12px;
+	border: 1px solid #e8e8e8;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px #dcdcdc;
+
+}
+
+#search input{
+	border: none;
+	width: 525px;
+	display: inline-block;
+}
+#search #search-box:hover {
+	box-shadow: 0 3px 6px #dcdcdc;
+}
+input {
+	outline: none;
+}
+#mic {
+	height: 25px;
+	padding: 0;
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+	margin-left: 18px;
+}
+#buttons {
 	text-align: center;
-	margin-top: 30px;
+	width: 400px;
+	margin: auto;
+}
+#buttons button{
+	display: inline-block;
+	font-weight: bold;
+	background-color: #f2f2f2;
+	color: #777777;
+	margin: 14px 2px;
+	padding: 9px 15px;
+	outline: none;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	font-size: 13px;
+}
+#link-text{
+	text-align: center;
+	margin-top: 10px;
 }
 a{
 	text-decoration: none;
 }
-#fsr{
+#footer-right{
 	float: right;
 }
-#fsl{
+#footer-left{
 	float: left;
 }
-.footer{
+#footer{
 	position: absolute;
   right: 0;
   bottom: 0;
@@ -63,6 +131,9 @@ a{
   text-align: center;
   font-size: 13; 
 }
-.footer a{
-	padding: 5px 5px;
+#footer a{
+	margin: 0 13px 0 13px;
+	color: #696969;
+	text-decoration: none;
+	overflow: hidden;
 }

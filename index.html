@@ -4,34 +4,38 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="header">
-		<ul>
-			<li><a href="#"> Images</a></li>
-			<li><a href="#">Gmail </a></li>
-		</ul>
+	<div id="header">
+		<div id="nav">
+			<a href="#"> Gmail</a>
+			<a href="#">Images </a>
+			<div id="options">
+				<a href=""></a>
+			</div>
+			<button>Sign in</button>
+		</div>
+	</div>
+	<div id="search">
+		<img id="logo" src="images/logo.png">
 		
+		<div id="search-box">
+			<input type="text"></input>
+			<a href="#"><img id="mic" src="images/mic.png"></a>
+		</div>
+		<div id="buttons">
+			<button type="button">Google Search</button>
+			<button type="button">I'm Feeling Lucky</button>
+		</div>
+		<div id="link-text">
+			<a href="#">Explore 25 odd and wonderful entries in Dr Johnson's dictionary with Google</a>
+		</div>
 	</div>
-	<div class="logo">
-		<img src="google.jpg"/>
-	</div>
-	<div class="search-box">
-		<input type="text" name="search">
-	</div>
-	<div class="buttons">
-		<button type="button">Google Search</button>
-		<button type="button">I'm Feeling Lucky</button>
-	</div>
-	<div class="link-text">
-		<a href="#">Explore 25 odd and wonderful entries in Dr Johnson's dictionary with Google</a>
-
-	</div>
-	<div class="footer">
-		<span id="fsl">
+	<div id="footer">
+		<span id="footer-left">
 			<a href="#">Advertising</a>
 			<a href="#">Business</a>
 			<a href="#">About</a>
 		</span>
-		<span id="fsr">
+		<span id="footer-right">
 			<a href="#">Privacy</a>
 			<a href="#">Terms</a>
 			<a href="#">Settings</a>
